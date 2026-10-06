@@ -1,4 +1,4 @@
-# Image Generation
+# StudioAI
 
 ## 📌 Description
 
@@ -8,15 +8,15 @@ An end-to-end computer vision project for text-to-image generation and image ana
 
 ## 🛠️ Tech Stack
 
-| Category                    | Technologies Used                                                                                                                      |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| 🌐 **Programming Language** | `Python`                                                                                                                               |
-| 🌱 **Environment**          | `Jupyter Notebook`                                                                                                                     |
-| 🧩 **Frameworks**           | `PyTorch`, `Streamlit`                                                                                                                 |
-| ⚛️ **Libraries**            | `NumPy`, `Matplotlib`, `Diffusers`, `pyngrok`, `Streamlit - Drawable Canvas`,<br>`Transformers`, `Pillow`, `Accelerate`, `safetensors` |
-| 🤖 **Generative AI Models** | `Stable-Diffusion-v1-5`, `Stable-Diffusion-Inpainting`                                                                                 |
-| ⚡ **Tool**                 | `Google Colab`                                                                                                                         |
-| 🚧 **Tunneling Service**    | `ngrok`                                                                                                                                |
+| Category                    | Technologies Used                                                                                         |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| 🌐 **Programming Language** | `Python`                                                                                                  |
+| 🌱 **Environment**          | `Jupyter Notebook`                                                                                        |
+| 🧩 **Frameworks**           | `PyTorch`, `Streamlit`                                                                                    |
+| ⚛️ **Libraries**            | `Diffusers`, `Transformers`, `NumPy`, `matplotlib`, `Pillow`,<br>`Streamlit - Drawable Canvas`, `pyngrok` |
+| 🤖 **Generative AI Models** | `Stable Diffusion v1-5`, `Stable Diffusion Inpainting`                                                    |
+| ⚡ **Tool**                 | `Google Colab`                                                                                            |
+| 🚧 **Tunneling Service**    | `ngrok`                                                                                                   |
 
 ---
 
@@ -36,16 +36,16 @@ An end-to-end computer vision project for text-to-image generation and image ana
 3. **Clone the Repository**
 
 ```bash
-git clone https://github.com/Fikri-Rouzan/image-generation.git
-cd image-generation
+git clone https://github.com/Fikri-Rouzan/studioai.git
+cd studioai
 ```
 
 4. **Configure Authentication Token**
 
-   Open the `streamlit.ipynb` file and insert your ngrok authtoken into the following code cell
+   Open the `notebooks/streamlit.ipynb` file and insert your ngrok authtoken into the following code cell
 
    ```python
-   auth_token = "YOUR_AUTHENTICATION_KEY"
+   auth_token = "YOUR_AUTHENTICATION_TOKEN"
 
    ngrok.set_auth_token(auth_token)
    subprocess.Popen(["streamlit", "run", "app.py"])
